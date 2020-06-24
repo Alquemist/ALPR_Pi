@@ -92,7 +92,6 @@ def OpenIPCamera():
                     frame = cv2.cvtColor(cap.read()[1], cv2.COLOR_BGR2GRAY)
                     Qpic_nd.put(frame)
                     i = 0
-                    cap.imshow('fr', frame) 
                 except:
                     pass
         except Exception as e:
